@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="task management.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+
+
+<div class="over-roll-container">
+    <div class="main-container">
+        <div class="sidebar-container">
+
+            <!-- First Sidebar Container -->
+            <div class="first-sidebar-container">
+                <div class="logo-organix-container">
+                    <div class="logo-container">
+                        <img src="./Image/organix logo.png" alt="Logo">
+                    </div>
+    
+                    <div class="organix-container">
+                        <h3>Organix</h3>
+                    </div>
+                </div>
+    
+                <div class="search-container">
+                    <form class="form">
+                        <div class="search-icon-cotainer">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+    
+                        <input type="text" placeholder="Search" name="search">
+                    </form>
+    
+                    <div class="temperature-container">
+                        <div class="flake-container">
+                            <i class="fa-regular fa-snowflake"></i>
+                        </div>
+
+                        <div class="text-container">
+                            <p>F</p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <!-- Second Sidebar Container -->
+            <div class="second-sidebar-container">
+                <div class="main-menu-container">
+                    <p>MAIN MENU</p>
+                </div>
+
+                <div class="icon-text-container">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+
+                    <div class="text-container">
+                        <p>Home</p>
+                    </div>
+                </div>
+
+                <div class="icon-text-container">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-folder-closed"></i>
+                    </div>
+
+                    <div class="text-container">
+                        <p>Projects</p>
+                    </div>
+                </div>
+
+                <div class="icon-text-container">
+                    <div class="icon-container">
+                        <i class="fa-regular fa-calendar"></i>
+                    </div>
+
+                    <div class="text-container">
+                        <p>Calendar</p>
+                    </div>
+                </div>
+
+                <div class="icon-text-container">
+                    <div class="icon-container">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+
+                    <div class="text-container">
+                        <p>Team Member</p>
+                    </div>
+                </div>
+
+                <div class="icon-text-container">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+
+                    <div class="text-container">
+                        <p>Analytics</p>
+                    </div>
+                </div>
+
+                <div class="icon-text-container">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+
+                    <div class="text-container">
+                        <p>Wallet</p>
+                    </div>
+                </div>
+
+                <div class="icon-text-container">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+
+                    <div class="text-container">
+                        <p>Tasks</p>
+                    </div>
+                </div>
+
+                <div class="icon-text-container">
+                    <div class="icon-container">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <div class="text-container">
+                        <p>Email</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Thirsd Sidebar Container -->
+            <div class="third-sidebar-container">
+                <div class="label-container">
+                    <p>LABEL</p>
+                </div>
+
+                <div class="color-marketing-container">
+                    <div class="color-container">
+                        <i class="fa-regular fa-circle"></i>
+                    </div>
+
+                    <div class="marketing-sidebar">
+                        <p>Marketing</p>
+                    </div>
+                </div>
+
+                <div class="color-marketing-container">
+                    <div class="color-container-dev">
+                        <i class="fa-regular fa-circle"></i>
+                    </div>
+
+                    <div class="marketing-sidebar">
+                        <p>Development</p>
+                    </div>
+                </div>
+
+                <div class="color-marketing-container">
+                    <div class="color-container-design">
+                        <i class="fa-regular fa-circle"></i>
+                    </div>
+
+                    <div class="marketing-sidebar">
+                        <p>Design</p>
+                    </div>
+                </div>
+
+                <div class="color-marketing-container">
+                    <div class="color-container-modeling">
+                        <i class="fa-regular fa-circle"></i>
+                    </div>
+
+                    <div class="marketing-sidebar">
+                        <p>Modeling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Content Container -->
+        <div class="content-container">
+            <div class="first-content-container">
+                <div class="left-container">
+                    <h2>Tasks</h2>
+                </div>
+
+                <div class="right-content-container">
+                    <div class="add-task-container">
+                        <button>
+                                <i class="fa-solid fa-plus"></i>
+                        </button>
+
+                        <div class="add-container">
+                            <p>Add Task</p>
+                        </div>
+                    </div>
+
+                    <div class="bell-container">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+
+                    <div class="profile-container">
+                        <h1>H</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-content-container">
+                <div class="first-center-container">
+                    <div class="left-center-container">
+                        <div class="board-text-container board">
+                            <div class="board-icon-container">
+                                <i class="fa-solid fa-pause"></i>
+                            </div>
+    
+                            <div class="board-paragraph-container">
+                                <p>Board</p>
+                            </div>
+                        </div>
+    
+                        <div class="board-text-container">
+                            <div class="board-icon-container">
+                                <i class="fa-solid fa-table-columns"></i>
+                            </div>
+    
+                            <div class="board-paragraph-container">
+                                <p>Table</p>
+                            </div>
+                        </div>
+    
+                        <div class="board-text-container">
+                            <div class="board-icon-container">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+    
+                            <div class="board-paragraph-container">
+                                <p>Calendar</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="right-center-container">
+                        <div class="filter-text-container">
+                            <div class="filter-icon-container">
+                                <i class="fa-solid fa-filter"></i>
+                            </div>
+                            
+                            <div class="filter-paragraph-container">
+                                <p>Filter</p>
+                            </div>
+                        </div>
+    
+                        <div class="filter-text-container">
+                            <div class="filter-icon-container">
+                                <i class="fa-solid fa-sort"></i>
+                            </div>
+                            
+                            <div class="filter-paragraph-container">
+                                <p>Sort</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="second-center-container">
+                    <div class="to-do-button-container">
+                        <div class="to-do-text-container">
+                            <h4>To - Do</h4>
+                        </div>
+
+                        <div class="plus-container-to-do">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="in-progress-button-container">
+                        <div class="to-do-text-container">
+                            <h4>In Progress</h4>
+                        </div>
+
+                        <div class="plus-container-in-progress">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="done-button-container">
+                        <div class="to-do-text-container">
+                            <h4>Done</h4>
+                        </div>
+
+                        <div class="plus-container-done">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="botton-container">
+                <div class="design-mapping-container">
+                    <div class="cards">
+                        <div class="first-card-container">
+                            <div class="development-icon-container">
+                                <div class="development-container top-design">
+                                    <h3>DESIGN</h3>
+                                </div>
+                    
+                                <div class="icon-dev-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                    
+                            <div class="mapping-container">
+                                <img src="./Image/Customer journey mapping.png" alt="">
+                            </div>
+                    
+                            <div class="database-container">
+                                <div class="data">
+                                    <h3>Customer Journey Mapping</h3>
+                                </div>
+                    
+                                <div class="uber">
+                                    <p>Kidszone</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="second-cards-container">
+                            <div class="lorem-container">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dicta sequi dolorum.</p>
+                            </div>
+                    
+                            <div class="quality-date-container">
+                                <div class="quality-container">
+                                    <div class="quality-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                    
+                                    <div class="medium">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="date-container">
+                                    <div class="date-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                    
+                                    <div class="month-container">
+                                        <p>25 October</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="avatar-link-conainer">
+                                <div class="avatar-container">
+                                    <img src="./Image/Customer journey profile.png" alt="Avatar">
+                                </div>
+                    
+                                <div class="link-comment-container">
+                                    <div class="link-number-container">
+                                        <div class="link-container">
+                                            <i class="fa-solid fa-link"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>16</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="comment-number-container">
+                                        <div class="comment-container">
+                                            <i class="fa-regular fa-comment"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>21</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-second">
+                        <div class="first-card-container">
+                            <div class="development-icon-container">
+                                <div class="development-container top-design">
+                                    <h3>DESIGN</h3>
+                                </div>
+                    
+                                <div class="icon-dev-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                    
+                            <div class="database-container">
+                                <div class="data">
+                                    <h3>Database Customization</h3>
+                                </div>
+                    
+                                <div class="uber">
+                                    <p>Uber</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="second-cards-container">
+                            <div class="lorem-container">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dicta sequi dolorum.</p>
+                            </div>
+                    
+                            <div class="quality-date-container">
+                                <div class="quality-container">
+                                    <div class="quality-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                    
+                                    <div class="medium">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="date-container">
+                                    <div class="date-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                    
+                                    <div class="month-container">
+                                        <p>28 October</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="avatar-link-conainer">
+                                <div class="avatar-container">
+                                    <img src="./Image/UI component.png" alt="Avatar">
+                                </div>
+                    
+                                <div class="link-comment-container">
+                                    <div class="link-number-container">
+                                        <div class="link-container">
+                                            <i class="fa-solid fa-link"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>03</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="comment-number-container">
+                                        <div class="comment-container">
+                                            <i class="fa-regular fa-comment"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>32</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="development-customization-container">
+                    <div class="cards-container">
+                        <div class="first-card-container">
+                            <div class="development-icon-container">
+                                <div class="development-container">
+                                    <h3>DEVELOPMENT</h3>
+                                </div>
+                    
+                                <div class="icon-dev-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                    
+                            <div class="database-container">
+                                <div class="data">
+                                    <h3>Database Customization</h3>
+                                </div>
+                    
+                                <div class="uber">
+                                    <p>Uber</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="second-cards-container">
+                            <div class="lorem-container">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dicta sequi dolorum.</p>
+                            </div>
+                    
+                            <div class="quality-date-container">
+                                <div class="quality-container">
+                                    <div class="quality-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                    
+                                    <div class="medium">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="date-container">
+                                    <div class="date-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                    
+                                    <div class="month-container">
+                                        <p>21 October</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="avatar-link-conainer">
+                                <div class="avatar-container">
+                                    <img src="./Image/Database profile.png" alt="Avatar">
+                                </div>
+                    
+                                <div class="link-comment-container">
+                                    <div class="link-number-container">
+                                        <div class="link-container">
+                                            <i class="fa-solid fa-link"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>10</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="comment-number-container">
+                                        <div class="comment-container">
+                                            <i class="fa-regular fa-comment"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>06</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cards-container">
+                        <div class="first-card-container">
+                            <div class="development-icon-container">
+                                <div class="development-container top-design">
+                                    <h3>DESIGN</h3>
+                                </div>
+                    
+                                <div class="icon-dev-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                    
+                            <div class="database-container">
+                                <div class="data">
+                                    <h3>Redesign WordPress Website</h3>
+                                </div>
+                    
+                                <div class="uber">
+                                    <p>Design Lab</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="second-cards-container">
+                            <div class="lorem-container">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dicta sequi dolorum.</p>
+                            </div>
+                    
+                            <div class="quality-date-container">
+                                <div class="quality-container-high">
+                                    <div class="quality-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                    
+                                    <div class="medium">
+                                        <p>High</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="date-container">
+                                    <div class="date-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                    
+                                    <div class="month-container">
+                                        <p>17 October</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="avatar-link-conainer">
+                                <div class="avatar-container">
+                                    <img src="./Image/Redesign wordpress.png" alt="Avatar">
+                                </div>
+                    
+                                <div class="link-comment-container">
+                                    <div class="link-number-container">
+                                        <div class="link-container">
+                                            <i class="fa-solid fa-link"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>02</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="comment-number-container">
+                                        <div class="comment-container">
+                                            <i class="fa-regular fa-comment"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>29</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cards-container">
+                        <div class="first-card-container">
+                            <div class="development-icon-container">
+                                <div class="development-container modeling">
+                                    <h3>3D MODELING</h3>
+                                </div>
+                    
+                                <div class="icon-dev-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                    
+                            <div class="database-container">
+                                <div class="data">
+                                    <h3>Fix Interior Planning</h3>
+                                </div>
+                    
+                                <div class="uber">
+                                    <p>Hotel Nice</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="second-cards-container">
+                            <div class="lorem-container">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dicta sequi dolorum.</p>
+                            </div>
+                    
+                            <div class="quality-date-container">
+                                <div class="quality-container-low">
+                                    <div class="quality-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                    
+                                    <div class="medium">
+                                        <p>Low</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="date-container">
+                                    <div class="date-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                    
+                                    <div class="month-container">
+                                        <p>13 October</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="avatar-link-conainer">
+                                <div class="avatar-container">
+                                    <img src="./Image/Fix interior.png" alt="Avatar">
+                                </div>
+                    
+                                <div class="link-comment-container">
+                                    <div class="link-number-container">
+                                        <div class="link-container">
+                                            <i class="fa-solid fa-link"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>13</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="comment-number-container">
+                                        <div class="comment-container">
+                                            <i class="fa-regular fa-comment"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>09</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cards-container">
+                        <div class="first-card-container">
+                            <div class="development-icon-container">
+                                <div class="development-container">
+                                    <h3>MARKETING</h3>
+                                </div>
+                    
+                                <div class="icon-dev-container">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+                    
+                            <div class="database-container">
+                                <div class="data">
+                                    <h3>Facebook Ads Campaign </h3>
+                                </div>
+                    
+                                <div class="uber">
+                                    <p>Planety</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="second-cards-container">
+                            <div class="lorem-container">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id dicta sequi dolorum.</p>
+                            </div>
+                    
+                            <div class="quality-date-container">
+                                <div class="quality-container">
+                                    <div class="quality-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                    
+                                    <div class="medium">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="date-container">
+                                    <div class="date-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                    
+                                    <div class="month-container">
+                                        <p>20 October</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="avatar-link-conainer">
+                                <div class="avatar-container">
+                                    <img src="./Image/Facebook ads.png" alt="Avatar">
+                                </div>
+                    
+                                <div class="link-comment-container">
+                                    <div class="link-number-container">
+                                        <div class="link-container">
+                                            <i class="fa-solid fa-link"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>10</p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="comment-number-container">
+                                        <div class="comment-container">
+                                            <i class="fa-regular fa-comment"></i>
+                                        </div>
+                    
+                                        <div class="number-container">
+                                            <p>06</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
